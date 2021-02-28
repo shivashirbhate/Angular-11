@@ -1,0 +1,145 @@
+<div class="container">
+    <main>
+        <header class="row tm-welcome-section">
+            <h2 class="col-12 text-center tm-section-title">Welcome to Shree Krupa</h2>
+            <p class="col-12 text-center">Total 3 HTML pages are included in this template. Header image has a parallax effect. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </header>
+
+        <div class="tm-paging-links">
+            <nav>
+                <ul>
+                    <li class="tm-paging-item"><a href="javascript:void(0);" (click)="selectType('pizza')"
+                            class="tm-paging-link active">Pizza</a></li>
+                    <li class="tm-paging-item"><a href="javascript:void(0);" (click)="selectType('salad')"
+                            class="tm-paging-link">Salad</a></li>
+                    <li class="tm-paging-item"><a href="javascript:void(0);" (click)="selectType('noodle')"
+                            class="tm-paging-link">Noodle</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Gallery -->
+        <div class="tm-gallery">
+            <!-- gallery page 1 -->
+            <div id="tm-gallery-page-pizza" class="tm-gallery-page" *ngIf="restaurentShowDishes.length != 0">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item"
+                    *ngFor="let item of restaurentShowDishes; index as i;">
+                    <figure>
+                        <img src="{{item.dimage}}" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">{{item.dname}}</h4>
+                            <p class="tm-gallery-description">{{item.ddesc}}</p>
+                            <p class="tm-gallery-price">{{item.dprice}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <!-- <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Aliquam sagittis</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$65 / $70</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Sed varius turpis</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$30.50</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Aliquam sagittis</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$25.50</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Maecenas eget justo</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$80.25</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Quisque et felis eros</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$20 / $40 / $60</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Sed ultricies dui</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$94</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                    <figure>
+                        <img src="/assets/img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+                        <figcaption>
+                            <h4 class="tm-gallery-title">Donec porta consequat</h4>
+                            <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                            <p class="tm-gallery-price">$15</p>
+                        </figcaption>
+                    </figure>
+                </article> -->
+            </div> <!-- gallery page 1 -->
+            <div class="tm-section tm-container-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center tm-nodish" *ngIf="restaurentShowDishes.length == 0">
+                            No Dishes to Show
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="tm-section tm-container-inner">
+            <div class="row">
+                <div class="col-md-6">
+                    <figure class="tm-description-figure">
+                        <img src="/assets/img/img-01.jpg" alt="Image" class="img-fluid" />
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="tm-description-box">
+                        <h4 class="tm-gallery-title">Lorem Ipsum Nutrition</h4>
+                        <p class="tm-mb-45">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <!-- <p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template
+                            collection
+                            site is strictly prohibited. You will need to <a rel="nofollow"
+                                href="https://templatemo.com/contact">talk to us</a> for additional permissions about
+                            our
+                            templates. Thank you.</p> -->
+                        <!-- <a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
